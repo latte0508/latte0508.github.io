@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/latte0508/latte0508.github.io/issues"
   },
-  "homepage": "https://github.com/latte0508/latte0508.github.io#readme"
+  "homepage": "https://github.com/latte0508/latte0508.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "three": "^0.144.0"
+  }
 }
