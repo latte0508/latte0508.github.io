@@ -579,8 +579,9 @@ function init() {
     //SCENE
     scene = new _three.Scene();
     //CAMERA
-    camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(-10, 30, 30);
+    camera = new _three.OrthographicCamera(window.innerWidth / -2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / -2, 1, 1000);
+    //camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1 ,1000 );
+    camera.position.set(-5, 15, 15);
     //CONTRILS
     const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElement);
     orbit.update();
