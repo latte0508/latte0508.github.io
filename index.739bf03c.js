@@ -564,7 +564,9 @@ let panelSettings, numAnimations;
 init();
 function init() {
     //RENDER
-    renderer = new _three.WebGLRenderer();
+    renderer = new _three.WebGLRenderer({
+        antialias: true
+    });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true;
     renderer.setClearColor(0xffcc66);
