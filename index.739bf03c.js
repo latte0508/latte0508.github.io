@@ -597,12 +597,11 @@ const world = new _cannonEs.World({
     gravity: new _cannonEs.Vec3(0, -9.81, 0)
 });
 const timeStep = 1 / 60;
-/*
 //CannonDebugger
-const cannonDebugger = new CannonDebugger(scene, world, {
-    color:0xff0000
+const cannonDebugger = new (0, _cannonEsDebuggerDefault.default)(scene, world, {
+    color: 0xff0000
 });
-*/ //CAMERA
+//CAMERA
 //camera = new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 1, 1000 );
 camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 //camera.position.set( 0, 12, 0 );
@@ -917,19 +916,21 @@ document.addEventListener("mouseup", function() {
     vehicle.setWheelForce(0, 1);
 });
 //TOUCH
-document.addEventListener("touchstart", function(event) {
+window.addEventListener("touchstart", function(event) {
     MD = true;
+    const touch = event.touches[0];
     basicRX = qmimiCarBody.quaternion.x;
     basicRY = qmimiCarBody.quaternion.y;
     basicRZ = qmimiCarBody.quaternion.z;
     basicRW = qmimiCarBody.quaternion.w;
-    downX = event.clientX;
-    downY = event.clientY;
+    downX = touch.clientX;
+    downY = touch.clientY;
 });
-document.addEventListener("touchmove", function(event) {
+window.addEventListener("touchmove", function(event) {
+    const touch = event.touches[0];
     if (MD) {
-        nowX = event.clientX;
-        nowY = event.clientY;
+        nowX = touch.clientX;
+        nowY = touch.clientY;
         goY = nowY - downY;
         goX = nowX - downX;
         if (goY < 0) {
@@ -937,15 +938,15 @@ document.addEventListener("touchmove", function(event) {
             vehicle.setWheelForce(MaxForce, 1);
         }
         if (goX > 30) {
-            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 3, 0);
-            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 3, 1);
+            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 2, 0);
+            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 2, 1);
         } else if (goX < 30) {
-            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 3, 0);
-            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 3, 1);
+            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 2, 0);
+            vehicle.setSteeringValue(-maxSteerVal * goX / window.innerWidth * 2, 1);
         }
     }
 });
-document.addEventListener("touchend", function() {
+window.addEventListener("touchend", function() {
     MD = false;
     vehicle.setWheelForce(0, 0);
     vehicle.setWheelForce(0, 1);
@@ -1121,7 +1122,7 @@ function animate() {
     qmimi.quaternion.copy(qmimiCarBody.quaternion);
     //renderer.render( scene, camera );
     effect.render(scene, camera);
-    //cannonDebugger.update();
+    cannonDebugger.update();
     /*
     const goX = cameraBase.position.x + ((qmimi.position.x - vector.x * 30) - cameraBase.position.x)/3;
     const goY = cameraBase.position.y + ((qmimi.position.y - vector.y * 30) - cameraBase.position.y)/3;    
