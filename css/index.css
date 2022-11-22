@@ -1,3 +1,39 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  overflow: hidden; }
+
 canvas {
   position: absolute;
   width: 100%;
@@ -26,6 +62,83 @@ div#canvasbox {
   left: 0; }
 
 img.logo {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    img.logo {
+      top: 2.3vw;
+      left: 2.3vw;
+      width: 10vw; } }
+  @media only screen and (orientation: portrait) {
+    img.logo {
+      top: 7.5vw;
+      left: 7.5vw;
+      width: 33vw; } }
+
+div.nav {
   position: absolute;
-  top: 60px;
-  left: 60px; }
+  top: 0;
+  right: 0; }
+
+div.nav img {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.nav img {
+      top: 2.3vw;
+      right: 2.3vw;
+      width: 2.55vw; } }
+  @media only screen and (orientation: portrait) {
+    div.nav img {
+      top: 7.5vw;
+      right: 7.5vw;
+      width: 8.8vw; } }
+
+img.close {
+  display: none; }
+
+img.back {
+  display: none; }
+
+img.menu {
+  display: block; }
+
+div.copyright {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.copyright {
+      font-family: BebasRegular;
+      text-align: right;
+      bottom: 2.3vw;
+      right: 2.3vw;
+      font-size: 0.8vw;
+      letter-spacing: 0.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.copyright {
+      font-family: BebasBold;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 7.7vw;
+      margin: auto;
+      font-size: 2.8vw;
+      letter-spacing: 0.2vw; } }
+
+img.layout {
+  opacity: 0.3;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  left: 0; }
+
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("../fonts/BebasRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'BebasBold';
+  src: url("../fonts/BebasBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'NotoSansTC';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff") format("woff"); }
