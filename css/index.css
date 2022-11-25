@@ -93,7 +93,7 @@ div.nav {
   height: 100vh;
   background-color: #ffffff;
   text-align: center;
-  font-family: BebasRegular;
+  font-family: BebasBold;
   font-size: 7vh; }
 
 div.nav div {
@@ -103,7 +103,7 @@ div.nav div {
   vertical-align: middle; }
 
 div.nav div a {
-  font-family: BebasRegular;
+  font-family: BebasBold;
   text-decoration: none;
   color: #000000; }
 
@@ -237,7 +237,7 @@ div.scroll img {
 
 div.filterkeywords {
   position: relative;
-  font-family: BebasRegular;
+  font-family: BebasBold;
   left: 0;
   right: 0;
   margin: auto; }
@@ -428,7 +428,7 @@ div.year {
 
 div.workname {
   position: relative;
-  font-family: BebasRegular; }
+  font-family: BebasBold; }
   @media only screen and (orientation: landscape) {
     div.workname {
       text-align: right;
@@ -441,7 +441,7 @@ div.workname {
       line-height: 9.8vw; } }
 
 div.workname sub {
-  font-family: BebasRegular; }
+  font-family: BebasBold; }
   @media only screen and (orientation: landscape) {
     div.workname sub {
       font-size: 2.5vw;
