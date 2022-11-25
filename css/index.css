@@ -92,7 +92,7 @@ div.nav {
   height: 100vh;
   background-color: #ffffff;
   text-align: center;
-  font-family: BebasBold;
+  font-family: BebasRegular;
   font-size: 7vh; }
 
 div.nav div {
@@ -102,7 +102,7 @@ div.nav div {
   vertical-align: middle; }
 
 div.nav div a {
-  font-family: BebasBold;
+  font-family: BebasRegular;
   text-decoration: none;
   color: #000000; }
 
@@ -121,7 +121,7 @@ div.emailbtn img {
   vertical-align: middle; }
 
 div.emailbtn a {
-  font-family: BebasBold;
+  font-family: BebasRegular;
   margin-left: 1vw;
   text-decoration: none;
   color: #000000; }
@@ -167,7 +167,7 @@ img.menu {
 @media only screen and (orientation: portrait) {
   div.copyright {
     position: fixed;
-    font-family: BebasBold;
+    font-family: BebasRegular;
     text-align: center;
     left: 0;
     right: 0;
@@ -218,7 +218,7 @@ div.works {
 
 div.scroll {
   position: fixed;
-  font-family: BebasBold;
+  font-family: BebasRegular;
   font-size: 1vw;
   line-height: 1.5vw;
   text-align: center;
@@ -236,7 +236,7 @@ div.scroll img {
 
 div.filterkeywords {
   position: relative;
-  font-family: BebasBold;
+  font-family: BebasRegular;
   left: 0;
   right: 0;
   margin: auto; }
@@ -302,7 +302,7 @@ img.workbanner {
 
 p.workname {
   float: left;
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     p.workname {
       margin-top: 0.4vw;
@@ -313,7 +313,7 @@ p.workname {
       font-size: 3vw; } }
 
 p.workname sub {
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     p.workname sub {
       font-size: 1.3vw; } }
@@ -414,7 +414,7 @@ div.workdatascope {
 
 div.year {
   position: relative;
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     div.year {
       text-align: right;
@@ -427,7 +427,7 @@ div.year {
 
 div.workname {
   position: relative;
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     div.workname {
       text-align: right;
@@ -440,7 +440,7 @@ div.workname {
       line-height: 9.8vw; } }
 
 div.workname sub {
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     div.workname sub {
       font-size: 2.5vw;
@@ -452,7 +452,7 @@ div.workname sub {
 
 div.workkeywords {
   position: relative;
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     div.workkeywords {
       margin-top: 0.1vw;
@@ -467,7 +467,7 @@ div.workkeywords {
       text-align: left; } }
 
 div.workkeywords sub {
-  font-family: BebasBold; }
+  font-family: BebasRegular; }
   @media only screen and (orientation: landscape) {
     div.workkeywords sub {
       font-size: 1vw;
@@ -597,5 +597,4 @@ div.gbtn {
 @font-face {
   font-family: 'NotoSansTC';
   font-style: normal;
-  font-weight: 400;
   src: url("https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff") format("woff"); }
