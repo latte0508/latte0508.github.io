@@ -10,7 +10,7 @@
                 "folder" : "airasia",
                 "imagenumbers" : "9",
                 "keywords" : [
-                    "event site",
+                    "event_site",
                     "airplane",
                     "3d",
                     "flash"
@@ -25,8 +25,8 @@
                 "folder" : "benz",
                 "imagenumbers" : "14",
                 "keywords" : [
-                    "event site",
-                    "racing pit",
+                    "event_site",
+                    "racing_pit",
                     "3d",
                     "flash"
                 ]
@@ -40,7 +40,7 @@
                 "folder" : "particle_jockey",
                 "imagenumbers" : "10",
                 "keywords" : [
-                    "event site",
+                    "event_site",
                     "music",
                     "3d",
                     "html5"
@@ -55,7 +55,7 @@
                 "folder" : "uniqube",
                 "imagenumbers" : "7",
                 "keywords" : [
-                    "event site",
+                    "event_site",
                     "music",
                     "3d",
                     "flash"
@@ -70,8 +70,8 @@
                 "folder" : "taishinbank",
                 "imagenumbers" : "11",
                 "keywords" : [
-                    "event site",
-                    "space shuttle",
+                    "event_site",
+                    "space_shuttle",
                     "3d",
                     "flash"
                 ]
@@ -85,7 +85,7 @@
                 "folder" : "tdhb_event",
                 "imagenumbers" : "9",
                 "keywords" : [
-                    "event site",
+                    "event_site",
                     "3d",
                     "flash"
                 ]

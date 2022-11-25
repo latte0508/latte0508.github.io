@@ -203,6 +203,74 @@ img.layout_mobile {
     img.layout_mobile {
       display: block; } }
 
+div.filter {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh; }
+
+div.filterBtns {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  @media only screen and (orientation: landscape) {
+    div.filterBtns {
+      width: 56vh;
+      height: 60vh; } }
+  @media only screen and (orientation: portrait) {
+    div.filterBtns {
+      width: 84vw;
+      height: 120vw; } }
+
+div.filterBtn {
+  position: relative;
+  float: left;
+  cursor: pointer; }
+  @media only screen and (orientation: landscape) {
+    div.filterBtn {
+      font-size: 5.5vh;
+      width: 25vh;
+      height: 8.2vh;
+      margin-left: 3vh; } }
+  @media only screen and (orientation: portrait) {
+    div.filterBtn {
+      font-size: 8vw;
+      width: 34.5vw;
+      height: 12vw;
+      margin-left: 6vw; } }
+
+div.filterLine {
+  position: relative;
+  float: left; }
+  @media only screen and (orientation: landscape) {
+    div.filterLine {
+      width: 25vh;
+      height: 8.2vh;
+      margin-left: 3vh; } }
+  @media only screen and (orientation: portrait) {
+    div.filterLine {
+      width: 34.5vw;
+      height: 12vw;
+      margin-left: 6vw; } }
+
+div.line {
+  background-color: #cccccc;
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.line {
+      width: 22vh;
+      height: 0.1vh;
+      top: 3vh; } }
+  @media only screen and (orientation: portrait) {
+    div.line {
+      width: 30vw;
+      height: 0.1vw;
+      top: 5vw; } }
+
 div.works {
   display: none;
   position: absolute;
@@ -237,7 +305,6 @@ div.scroll img {
 
 div.filterkeywords {
   position: relative;
-  font-family: BebasBold;
   left: 0;
   right: 0;
   margin: auto; }
@@ -250,6 +317,15 @@ div.filterkeywords {
     div.filterkeywords {
       top: 26vw;
       width: 85vw;
+      font-size: 10vw; } }
+
+div.filterkeywords p {
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.filterkeywords p {
+      font-size: 3.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.filterkeywords p {
       font-size: 10vw; } }
 
 img.filter {
@@ -415,7 +491,7 @@ div.workdatascope {
 
 div.year {
   position: relative;
-  font-family: BebasRegular; }
+  font-family: BebasBold; }
   @media only screen and (orientation: landscape) {
     div.year {
       text-align: right;
