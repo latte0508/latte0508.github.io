@@ -588,13 +588,15 @@ div.gbtn {
 
 @font-face {
   font-family: 'BebasRegular';
+  font-weight: normal;
   src: url("../fonts/BebasRegular.woff") format("woff"); }
 
 @font-face {
   font-family: 'BebasBold';
+  font-weight: normal;
   src: url("../fonts/BebasBold.woff") format("woff"); }
 
 @font-face {
   font-family: 'NotoSansTC';
-  font-style: normal;
+  font-weight: normal;
   src: url("https://fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff") format("woff"); }
