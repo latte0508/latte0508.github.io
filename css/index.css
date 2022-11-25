@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -9,7 +10,9 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-family: "微軟正黑體";
+  font-weight: bold; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -32,7 +35,9 @@ table {
   border-spacing: 0; }
 
 body {
-  overflow: hidden; }
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%; }
 
 canvas {
   position: absolute;
@@ -41,7 +46,13 @@ canvas {
   top: 0;
   left: 0; }
 
+div#canvasbox {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 div.loading {
+  background-color: #ffffff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -56,38 +67,80 @@ div.loading img {
   bottom: 0;
   margin: auto; }
 
-div#canvasbox {
-  position: absolute;
-  top: 0;
-  left: 0; }
+a.logo {
+  position: fixed;
+  top: 0vw;
+  left: 0vw; }
 
-img.logo {
-  position: absolute; }
+a.logo img {
+  position: fixed; }
   @media only screen and (orientation: landscape) {
-    img.logo {
+    a.logo img {
       top: 2.3vw;
       left: 2.3vw;
       width: 10vw; } }
   @media only screen and (orientation: portrait) {
-    img.logo {
+    a.logo img {
       top: 7.5vw;
       left: 7.5vw;
       width: 33vw; } }
 
 div.nav {
+  display: none;
   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: BebasBold;
+  font-size: 7vh; }
+
+div.nav div {
+  position: relative;
+  top: 17vh;
+  margin-top: 1.5vh;
+  vertical-align: middle; }
+
+div.nav div a {
+  font-family: BebasBold;
+  text-decoration: none;
+  color: #000000; }
+
+div.nav div.emailbtn {
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 16vh;
+  margin: auto;
+  height: 4.2vh;
+  font-size: 3.5vh; }
+
+div.emailbtn img {
+  height: 6vh;
+  vertical-align: middle; }
+
+div.emailbtn a {
+  font-family: BebasBold;
+  margin-left: 1vw;
+  text-decoration: none;
+  color: #000000; }
+
+div.navbtn {
+  position: fixed;
   top: 0;
   right: 0; }
 
-div.nav img {
-  position: absolute; }
+div.navbtn img {
+  position: absolute;
+  cursor: pointer; }
   @media only screen and (orientation: landscape) {
-    div.nav img {
+    div.navbtn img {
       top: 2.3vw;
       right: 2.3vw;
       width: 2.55vw; } }
   @media only screen and (orientation: portrait) {
-    div.nav img {
+    div.navbtn img {
       top: 7.5vw;
       right: 7.5vw;
       width: 8.8vw; } }
@@ -101,33 +154,437 @@ img.back {
 img.menu {
   display: block; }
 
-div.copyright {
-  position: absolute; }
-  @media only screen and (orientation: landscape) {
-    div.copyright {
-      font-family: BebasRegular;
-      text-align: right;
-      bottom: 2.3vw;
-      right: 2.3vw;
-      font-size: 0.8vw;
-      letter-spacing: 0.1vw; } }
-  @media only screen and (orientation: portrait) {
-    div.copyright {
-      font-family: BebasBold;
-      text-align: center;
-      left: 0;
-      right: 0;
-      bottom: 7.7vw;
-      margin: auto;
-      font-size: 2.8vw;
-      letter-spacing: 0.2vw; } }
+@media only screen and (orientation: landscape) {
+  div.copyright {
+    position: fixed;
+    font-family: BebasRegular;
+    text-align: right;
+    bottom: 2.3vw;
+    right: 2.3vw;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw; } }
+
+@media only screen and (orientation: portrait) {
+  div.copyright {
+    position: fixed;
+    font-family: BebasBold;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 7.7vw;
+    margin: auto;
+    font-size: 2.8vw;
+    letter-spacing: 0.2vw; } }
 
 img.layout {
   opacity: 0.3;
   position: absolute;
-  width: 100vw;
-  bottom: 0;
+  width: 100%;
+  top: 0;
   left: 0; }
+  @media only screen and (orientation: landscape) {
+    img.layout {
+      display: block; } }
+  @media only screen and (orientation: portrait) {
+    img.layout {
+      display: none; } }
+
+img.layout_mobile {
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0; }
+  @media only screen and (orientation: landscape) {
+    img.layout_mobile {
+      display: none; } }
+  @media only screen and (orientation: portrait) {
+    img.layout_mobile {
+      display: block; } }
+
+div.works {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh; }
+  @media only screen and (orientation: landscape) {
+    div.works {
+      padding-bottom: 15vw; } }
+  @media only screen and (orientation: portrait) {
+    div.works {
+      padding-bottom: 50vw; } }
+
+div.scroll {
+  position: fixed;
+  font-family: BebasBold;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  text-align: center;
+  bottom: 2.3vw;
+  left: 2.3vw; }
+  @media only screen and (orientation: landscape) {
+    div.scroll {
+      display: block; } }
+  @media only screen and (orientation: portrait) {
+    div.scroll {
+      display: none; } }
+
+div.scroll img {
+  width: 2.5vw; }
+
+div.filterkeywords {
+  position: relative;
+  font-family: BebasBold;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  @media only screen and (orientation: landscape) {
+    div.filterkeywords {
+      top: 6.7vw;
+      width: 67.2vw;
+      font-size: 3.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.filterkeywords {
+      top: 26vw;
+      width: 85vw;
+      font-size: 10vw; } }
+
+img.filter {
+  position: absolute;
+  cursor: pointer; }
+  @media only screen and (orientation: landscape) {
+    img.filter {
+      top: 0.3vw;
+      right: 1vw;
+      width: 2.7vw; } }
+  @media only screen and (orientation: portrait) {
+    img.filter {
+      top: 2vw;
+      right: 0;
+      width: 8vw; } }
+
+div.worklist {
+  position: relative;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: auto; }
+  @media only screen and (orientation: landscape) {
+    div.worklist {
+      top: 6.7vw;
+      width: 67.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.worklist {
+      top: 26vw;
+      width: 90vw; } }
+
+div.workbtn {
+  position: relative;
+  float: left;
+  height: auto; }
+  @media only screen and (orientation: landscape) {
+    div.workbtn {
+      width: 21.2vw;
+      margin-top: 1.3vw;
+      margin-right: 1.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workbtn {
+      left: 2.7vw;
+      width: 41.5vw;
+      margin-top: 4vw;
+      margin-right: 1.8vw; } }
+
+img.workbanner {
+  width: 100%; }
+
+p.workname {
+  float: left;
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    p.workname {
+      margin-top: 0.4vw;
+      font-size: 1.1vw; } }
+  @media only screen and (orientation: portrait) {
+    p.workname {
+      margin-top: 1.2vw;
+      font-size: 3vw; } }
+
+p.workname sub {
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    p.workname sub {
+      font-size: 1.3vw; } }
+  @media only screen and (orientation: portrait) {
+    p.workname sub {
+      font-size: 3.6vw; } }
+
+img.arrow_right {
+  float: right; }
+  @media only screen and (orientation: landscape) {
+    img.arrow_right {
+      margin-top: 0.5vw;
+      width: 1.2vw; } }
+  @media only screen and (orientation: portrait) {
+    img.arrow_right {
+      margin-top: 1.3vw;
+      width: 3.6vw; } }
+
+@media only screen and (orientation: landscape) {
+  div.topbar {
+    display: none; } }
+
+@media only screen and (orientation: portrait) {
+  div.topbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 22vw;
+    background-color: #ffffff; } }
+
+@media only screen and (orientation: landscape) {
+  div.bottombar {
+    display: none; } }
+
+@media only screen and (orientation: portrait) {
+  div.bottombar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vw;
+    background-color: #ffffff; } }
+
+div.work {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh; }
+
+div.workscope {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+  @media only screen and (orientation: landscape) {
+    div.workscope {
+      width: 68.5vw;
+      height: 29.7vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workscope {
+      width: 85vw;
+      height: 94vw; } }
+
+div.workdata {
+  float: left; }
+  @media only screen and (orientation: landscape) {
+    div.workdata {
+      position: relative;
+      top: 0vw;
+      left: 0vw;
+      width: 14.5vw;
+      height: 29.7vw;
+      margin-right: 1.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workdata {
+      position: absolute;
+      top: 59vw;
+      left: 0vw;
+      width: 85vw;
+      height: 35vw; } }
+
+div.workdatascope {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.workdatascope {
+      bottom: 0vw;
+      right: 0vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workdatascope {
+      top: 0vw;
+      left: 0vw; } }
+
+div.year {
+  position: relative;
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.year {
+      text-align: right;
+      font-size: 1.5vw; } }
+  @media only screen and (orientation: portrait) {
+    div.year {
+      text-align: left;
+      font-size: 5vw;
+      margin-bottom: 1.5vw; } }
+
+div.workname {
+  position: relative;
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.workname {
+      text-align: right;
+      font-size: 3vw;
+      line-height: 2.9vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workname {
+      text-align: left;
+      font-size: 9.8vw;
+      line-height: 9.8vw; } }
+
+div.workname sub {
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.workname sub {
+      font-size: 2.5vw;
+      line-height: 2.5vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workname sub {
+      font-size: 9.8vw;
+      line-height: 9.8vw; } }
+
+div.workkeywords {
+  position: relative;
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.workkeywords {
+      margin-top: 0.1vw;
+      font-size: 0.9vw;
+      line-height: 1.1vw;
+      text-align: right; } }
+  @media only screen and (orientation: portrait) {
+    div.workkeywords {
+      margin-top: 1.8vw;
+      font-size: 4.5vw;
+      line-height: 5vw;
+      text-align: left; } }
+
+div.workkeywords sub {
+  font-family: BebasBold; }
+  @media only screen and (orientation: landscape) {
+    div.workkeywords sub {
+      font-size: 1vw;
+      line-height: 1.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workkeywords sub {
+      font-size: 5vw;
+      line-height: 5vw; } }
+
+div.workgallerycope {
+  font-size: 0;
+  float: left;
+  overflow: hidden; }
+  @media only screen and (orientation: landscape) {
+    div.workgallerycope {
+      position: relative;
+      top: 0vw;
+      left: 0vw;
+      width: 52.7vw;
+      height: 29.7vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workgallerycope {
+      position: absolute;
+      top: 6vw;
+      left: 0vw;
+      width: 85vw;
+      height: 47.8vw; } }
+
+div.workgallery {
+  font-size: 0;
+  float: left; }
+  @media only screen and (orientation: landscape) {
+    div.workgallery {
+      position: relative;
+      width: 1000vw;
+      height: 29.7vw; } }
+  @media only screen and (orientation: portrait) {
+    div.workgallery {
+      position: absolute;
+      width: 1600vw;
+      height: 47.8vw; } }
+
+div.galleryimg {
+  float: left; }
+  @media only screen and (orientation: landscape) {
+    div.galleryimg {
+      width: 52.7vw;
+      height: 100%; } }
+  @media only screen and (orientation: portrait) {
+    div.galleryimg {
+      width: 85vw;
+      height: 100%; } }
+
+img.gimg {
+  position: absolute;
+  margin: 0; }
+  @media only screen and (orientation: landscape) {
+    img.gimg {
+      width: 52.7vw;
+      height: 100%; } }
+  @media only screen and (orientation: portrait) {
+    img.gimg {
+      width: 85vw;
+      height: 100%; } }
+
+div.gallerybtn {
+  float: right;
+  width: auto;
+  height: 2vw; }
+  @media only screen and (orientation: landscape) {
+    div.gallerybtn {
+      position: relative;
+      top: 0vw;
+      left: 0vw; } }
+  @media only screen and (orientation: portrait) {
+    div.gallerybtn {
+      position: absolute;
+      top: 0vw;
+      right: 0vw; } }
+
+div.gbtn {
+  position: relative;
+  float: left;
+  right: 0;
+  cursor: pointer; }
+  @media only screen and (orientation: landscape) {
+    div.gbtn {
+      width: 0.4vw;
+      height: 0.4vw;
+      top: 0.8vw;
+      border-radius: 10vw;
+      margin-left: 0.23vw;
+      margin-right: 0.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.gbtn {
+      width: 1.3vw;
+      height: 1.3vw;
+      top: 0vw;
+      border-radius: 10vw;
+      margin-left: 1.5vw;
+      margin-right: 0vw; } }
+
+@media only screen and (orientation: landscape) {
+  div.off {
+    border: solid 0.3vw #CCCCCC; } }
+
+@media only screen and (orientation: portrait) {
+  div.off {
+    border: solid 1vw #CCCCCC; } }
+
+@media only screen and (orientation: landscape) {
+  div.on {
+    border: solid 0.3vw #f5b331; } }
+
+@media only screen and (orientation: portrait) {
+  div.on {
+    border: solid 1vw #f5b331; } }
 
 @font-face {
   font-family: 'BebasRegular';

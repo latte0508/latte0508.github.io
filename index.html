@@ -4,19 +4,85 @@
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <!-- canvas -->
     <div id="canvasbox"></div>
+    <!-- 工作列表 -->
+    <div class="works">
+        <div class="scroll">S<br>C<br>R<br>O<br>L<br>L<br><br><img src="images/arrow-down.svg" /></div>
+        <div class="filterkeywords">ALL WORKS<img class="filter" src="images/filter.svg" /></div>
+        <div class="worklist"></div>
+        <div class="topbar"></div>
+        <div class="bottombar"></div>
+    </div>
+    <!-- 工作單元 -->
+    <div class="work">
+        <div class="workscope">
+            <div class="workdata">
+                <div class="workdatascope">
+                    <div class="year">2012</div>
+                    <div class="workname"><sub>Mercedes-Benz c-class</sub></div>
+                    <div class="workkeywords"><sub>FLASH</sub><br><sub>PV3D</sub><br>活動網站</div>
+                </div>
+            </div>
+            <div class="workgallerycope">
+                <div class="workgallery">
+                    <!-- <div class="galleryimg"><img class="gimg" src="images/benz/p1.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p2.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p3.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p4.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p5.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p6.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p7.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p8.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p9.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p10.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p11.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p12.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p13.jpg" /></div>
+                    <div class="galleryimg"><img class="gimg" src="images/benz/p14.jpg" /></div> -->
+                </div>
+            </div>
+            <div class="gallerybtn">
+                <!-- <div class="gbtn on"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div>
+                <div class="gbtn off"></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- 單元按鈕 -->
     <div class="nav">
-        <img class="close" src="images/close.svg" />
-        <img class="back" src="images/undo.svg" />
-        <img class="menu" src="images/menu.svg" />
+        <div class="homebtn"><a href="#">HOME</a></div>
+        <div class="capabilitiesbtn"><a href="#capabilities">CAPABILITIES</a></div>
+        <div class="worksbtn"><a href="#works">WORKS</a></div>
+        <div class="aboutmebtn"><a href="#aboutme">ABOUT ME</a></div>
+        <div class="emailbtn"><img src="images/email.svg" /><a href="mailto:bigstudio1204@gmail.com">bigstudio1204@gmail.com</a></div>
+    </div>
+    <!-- 右上按鈕 -->
+    <div class="navbtn">
+        <!-- <a href="#works"><img class="close" src="images/close.svg" /></a> -->
+        <img class="back" src="images/close.svg" />
+        <a href="#menu"><img class="menu" src="images/menu.svg" /></a>
     </div>
     <div class="loading"><img src="images/loading.svg" /></div>
-    <img class="logo" src="images/logo.svg" />
+    <a class="logo" href="#"><img class="logo" src="images/logo.svg" /></a>
     <div class="copyright">© 2023 BIG_STUDIO</div>
-    <!-- <img class="layout" src="images/index_mobile.png" /> -->
+    <!-- <img class="layout" src="images/work.png" /> -->
+    <!-- <img class="layout_mobile" src="images/work_mobile.png" /> -->
 </body>
 <script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
 <!-- <script type="text/javascript" src="scripts/three.js"></script> -->
 <script type="module" src="js/index.js"></script>
 </html>

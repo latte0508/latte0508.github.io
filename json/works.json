@@ -1,0 +1,95 @@
+[
+    {
+        "works" : [
+            {
+                "workname" : "AirAsia - 遨遊世界大聲踹貢",
+                "workbanner" : "images/airasia_banner.png",
+                "time" : "2011",
+                "description" : "",
+                "launch" : "",
+                "folder" : "airasia",
+                "imagenumbers" : "9",
+                "keywords" : [
+                    "event site",
+                    "airplane",
+                    "3d",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "Mercedes Benz c-class",
+                "workbanner" : "images/benz_banner.png",
+                "time" : "2009",
+                "description" : "",
+                "launch" : "",
+                "folder" : "benz",
+                "imagenumbers" : "14",
+                "keywords" : [
+                    "event site",
+                    "racing pit",
+                    "3d",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "PARTICLE JOCKEY",
+                "workbanner" : "images/particle_jockey_banner.png",
+                "time" : "2022",
+                "description" : "",
+                "launch" : "https://www.fla-g.com/ParticleJockey/index.php",
+                "folder" : "particle_jockey",
+                "imagenumbers" : "10",
+                "keywords" : [
+                    "event site",
+                    "music",
+                    "3d",
+                    "html5"
+                ]
+            },
+            {
+                "workname" : "UNIQUBE",
+                "workbanner" : "images/uniqube_banner.png",
+                "time" : "2012",
+                "description" : "",
+                "launch" : "",
+                "folder" : "uniqube",
+                "imagenumbers" : "7",
+                "keywords" : [
+                    "event site",
+                    "music",
+                    "3d",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "台新銀行幸福星願望",
+                "workbanner" : "images/taishinbank_banner.png",
+                "time" : "2010",
+                "description" : "",
+                "launch" : "",
+                "folder" : "taishinbank",
+                "imagenumbers" : "11",
+                "keywords" : [
+                    "event site",
+                    "space shuttle",
+                    "3d",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "天地合補彩繪天地",
+                "workbanner" : "images/tdhb_event_banner.png",
+                "time" : "2011",
+                "description" : "",
+                "launch" : "",
+                "folder" : "tdhb_event",
+                "imagenumbers" : "9",
+                "keywords" : [
+                    "event site",
+                    "3d",
+                    "flash"
+                ]
+            }
+        ]
+    }
+]
