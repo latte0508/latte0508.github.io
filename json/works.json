@@ -89,6 +89,45 @@
                     "3d",
                     "flash"
                 ]
+            },
+            {
+                "workname" : "HOTAI PAY LOGO",
+                "workbanner" : "images/hotaipaylogo_banner.png",
+                "time" : "2021",
+                "description" : "",
+                "launch" : "",
+                "folder" : "hotaipay_logo",
+                "imagenumbers" : "9",
+                "keywords" : [
+                    "logo_design"
+                ]
+            },
+            {
+                "workname" : "HOTAI POINT LOGO",
+                "workbanner" : "images/hotaipointlogo_banner.png",
+                "time" : "2021",
+                "description" : "",
+                "launch" : "",
+                "folder" : "hotaipoint_logo",
+                "imagenumbers" : "10",
+                "keywords" : [
+                    "logo_design"
+                ]
+            },
+            {
+                "workname" : "HOTAI",
+                "workbanner" : "images/hotai_banner.png",
+                "time" : "2021",
+                "description" : "",
+                "launch" : "",
+                "folder" : "hotai",
+                "imagenumbers" : "6",
+                "keywords" : [
+                    "official_site",
+                    "ferris_wheel",
+                    "html5",
+                    "3d"
+                ]
             }
         ]
     }
