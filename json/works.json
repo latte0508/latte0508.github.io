@@ -3,82 +3,82 @@
         "works" : [
             {
                 "workname" : "AirAsia - 遨遊世界大聲踹貢",
-                "workbanner" : "images/airasia_banner.png",
+                "workbanner" : "images/banner/airasia_banner.png",
                 "time" : "2011",
                 "description" : "",
                 "launch" : "",
                 "folder" : "airasia",
                 "imagenumbers" : "9",
                 "keywords" : [
-                    "event_site",
                     "airplane",
-                    "3d",
-                    "flash"
+                    "event_site",
+                    "flash",
+                    "3d"
                 ]
             },
             {
                 "workname" : "Mercedes Benz c-class",
-                "workbanner" : "images/benz_banner.png",
+                "workbanner" : "images/banner/benz_banner.png",
                 "time" : "2009",
                 "description" : "",
                 "launch" : "",
                 "folder" : "benz",
                 "imagenumbers" : "14",
                 "keywords" : [
-                    "event_site",
                     "racing_pit",
-                    "3d",
-                    "flash"
+                    "event_site",
+                    "flash",
+                    "3d"
                 ]
             },
             {
                 "workname" : "PARTICLE JOCKEY",
-                "workbanner" : "images/particle_jockey_banner.png",
+                "workbanner" : "images/banner/particle_jockey_banner.png",
                 "time" : "2022",
                 "description" : "",
                 "launch" : "https://www.fla-g.com/ParticleJockey/index.php",
                 "folder" : "particle_jockey",
                 "imagenumbers" : "10",
                 "keywords" : [
-                    "event_site",
                     "music",
-                    "3d",
-                    "html5"
+                    "event_site",
+                    "html5",
+                    "3d"
                 ]
             },
             {
                 "workname" : "UNIQUBE",
-                "workbanner" : "images/uniqube_banner.png",
+                "workbanner" : "images/banner/uniqube_banner.png",
                 "time" : "2012",
                 "description" : "",
                 "launch" : "",
                 "folder" : "uniqube",
                 "imagenumbers" : "7",
                 "keywords" : [
-                    "event_site",
                     "music",
-                    "3d",
-                    "flash"
+                    "event_site",
+                    "flash",
+                    "3d"
                 ]
             },
             {
                 "workname" : "台新銀行幸福星願望",
-                "workbanner" : "images/taishinbank_banner.png",
+                "workbanner" : "images/banner/taishinbank_banner.png",
                 "time" : "2010",
                 "description" : "",
                 "launch" : "",
                 "folder" : "taishinbank",
-                "imagenumbers" : "11",
+                "imagenumbers" : "8",
                 "keywords" : [
-                    "event_site",
                     "space_shuttle",
-                    "3d",
-                    "flash"
+                    "event_site",
+                    "flash",
+                    "3d"
                 ]
             },
             {
                 "workname" : "天地合補彩繪天地",
-                "workbanner" : "images/tdhb_event_banner.png",
+                "workbanner" : "images/banner/tdhb_event_banner.png",
                 "time" : "2011",
                 "description" : "",
                 "launch" : "",
@@ -86,13 +86,13 @@
                 "imagenumbers" : "9",
                 "keywords" : [
                     "event_site",
-                    "3d",
-                    "flash"
+                    "flash",
+                    "3d"
                 ]
             },
             {
                 "workname" : "HOTAI PAY LOGO",
-                "workbanner" : "images/hotaipaylogo_banner.png",
+                "workbanner" : "images/banner/hotaipaylogo_banner.png",
                 "time" : "2021",
                 "description" : "",
                 "launch" : "",
@@ -104,7 +104,7 @@
             },
             {
                 "workname" : "HOTAI POINT LOGO",
-                "workbanner" : "images/hotaipointlogo_banner.png",
+                "workbanner" : "images/banner/hotaipointlogo_banner.png",
                 "time" : "2021",
                 "description" : "",
                 "launch" : "",
@@ -116,17 +116,152 @@
             },
             {
                 "workname" : "HOTAI",
-                "workbanner" : "images/hotai_banner.png",
+                "workbanner" : "images/banner/hotai_banner.png",
                 "time" : "2021",
                 "description" : "",
                 "launch" : "",
                 "folder" : "hotai",
-                "imagenumbers" : "6",
+                "imagenumbers" : "7",
                 "keywords" : [
-                    "official_site",
                     "ferris_wheel",
+                    "official_site",
                     "html5",
                     "3d"
+                ]
+            },
+            {
+                "workname" : "ASUS Transformer Book",
+                "workbanner" : "images/banner/asustbook_banner.png",
+                "time" : "2012",
+                "description" : "",
+                "launch" : "",
+                "folder" : "asustbook",
+                "imagenumbers" : "6",
+                "keywords" : [
+                    "robot",
+                    "product_site"
+                ]
+            },
+            {
+                "workname" : "Lord of Labyrinth",
+                "workbanner" : "images/banner/lol_banner.png",
+                "time" : "2019",
+                "description" : "",
+                "launch" : "",
+                "folder" : "lord_of_labyrinth",
+                "imagenumbers" : "2",
+                "keywords" : [
+                    "game",
+                    "mobile_game",
+                    "unity"
+                ]
+            },
+            {
+                "workname" : "Intel - 虛擬城市",
+                "workbanner" : "images/banner/intelcity_banner.png",
+                "time" : "2008",
+                "description" : "",
+                "launch" : "",
+                "folder" : "intelcity",
+                "imagenumbers" : "3",
+                "keywords" : [
+                    "robot",
+                    "event_site",
+                    "flash",
+                    "3d"
+                ]
+            },
+            {
+                "workname" : "Intel - 當我們Core在一起",
+                "workbanner" : "images/banner/intelcore_banner.png",
+                "time" : "2008",
+                "description" : "",
+                "launch" : "",
+                "folder" : "intelcore",
+                "imagenumbers" : "6",
+                "keywords" : [
+                    "robot",
+                    "event_site",
+                    "flash",
+                    "3d"
+                ]
+            },
+            {
+                "workname" : "LP",
+                "workbanner" : "images/banner/lp_banner.png",
+                "time" : "2016",
+                "description" : "",
+                "launch" : "",
+                "folder" : "lp",
+                "imagenumbers" : "6",
+                "keywords" : [
+                    "ferris_wheel",
+                    "official_site"
+                ]
+            },
+            {
+                "workname" : "MANY",
+                "workbanner" : "images/banner/many_banner.png",
+                "time" : "2009",
+                "description" : "",
+                "launch" : "",
+                "folder" : "many",
+                "imagenumbers" : "4",
+                "keywords" : [
+                    "product_site",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "KERAQUA",
+                "workbanner" : "images/banner/keraqua_banner.png",
+                "time" : "2019",
+                "description" : "",
+                "launch" : "",
+                "folder" : "keraqua",
+                "imagenumbers" : "1",
+                "keywords" : [
+                    "logo_design"
+                ]
+            },
+            {
+                "workname" : "Sheen - 2009",
+                "workbanner" : "images/banner/sheen2009_banner.png",
+                "time" : "2009",
+                "description" : "",
+                "launch" : "",
+                "folder" : "sheen2009",
+                "imagenumbers" : "7",
+                "keywords" : [
+                    "product_site",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "Sheen - 2010",
+                "workbanner" : "images/banner/sheen2010_banner.png",
+                "time" : "2010",
+                "description" : "",
+                "launch" : "",
+                "folder" : "sheen2010",
+                "imagenumbers" : "10",
+                "keywords" : [
+                    "product_site",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "STAYREAL",
+                "workbanner" : "images/banner/stayreal_banner.png",
+                "time" : "2008",
+                "description" : "",
+                "launch" : "",
+                "folder" : "stayreal",
+                "imagenumbers" : "4",
+                "keywords" : [
+                    "ferris_wheel",
+                    "official_site",
+                    "flash"
                 ]
             }
         ]
