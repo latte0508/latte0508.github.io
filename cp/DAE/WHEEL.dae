@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Administrator</author>
+      <authoring_tool>3dsMax 8 - Feeling ColladaMax v3.04E.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=1;ExportTangents=0;ExportAnimations=1;SampleAnim=0;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=3.33333;</comments>
+    </contributor>
+    <created>2008-09-10T10:07:24Z</created>
+    <modified>2008-09-10T10:07:25Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="ColtPlus_UV.jpg" name="ColtPlus_UV_jpg">
+      <init_from>./ColtPlus_UV.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="lambert3SG" name="lambert3SG">
+      <instance_effect url="#lambert3SG-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert3SG-fx" name="lambert3SG">
+      <profile_COMMON>
+        <newparam sid="ColtPlus_UV_jpg-surface">
+          <surface type="2D">
+            <init_from>ColtPlus_UV.jpg</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="ColtPlus_UV_jpg-sampler">
+          <sampler2D>
+            <source>ColtPlus_UV_jpg-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ColtPlus_UV_jpg-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10000</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+            <index_of_refraction>
+              <float>1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="objpCylinder5-mesh" name="objpCylinder5">
+      <mesh>
+        <source id="objpCylinder5-mesh-positions">
+          <float_array id="objpCylinder5-mesh-positions-array" count="78">-7.76182 -3.83579 -2.94515 -8.5945 -3.83579 -2.11246 -9.73197 -3.83579 -1.80768 -10.8694 -3.83579 -2.11246 -11.7021 -3.83579 -2.94515 -12.0069 -3.83579 -4.08262 -11.7021 -3.83579 -5.22009 -10.8694 -3.83579 -6.05277 -9.73197 -3.83579 -6.35755 -8.5945 -3.83579 -6.05277 -7.76182 -3.83579 -5.22009 -7.45703 -3.83579 -4.08262 -7.76182 -5.75729 -2.94515 -8.5945 -5.75729 -2.11246 -9.73197 -5.75729 -1.80768 -10.8694 -5.75729 -2.11246 -11.7021 -5.75729 -2.94515 -12.0069 -5.75729 -4.08262 -11.7021 -5.75729 -5.22009 -10.8694 -5.75729 -6.05277 -9.73197 -5.75729 -6.35755 -8.5945 -5.75729 -6.05277 -7.76182 -5.75729 -5.22009 -7.45703 -5.75729 -4.08262 -9.73197 -3.83579 -4.08262 -9.73197 -5.75729 -4.08262</float_array>
+          <technique_common>
+            <accessor source="#objpCylinder5-mesh-positions-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="objpCylinder5-mesh-normals">
+          <float_array id="objpCylinder5-mesh-normals-array" count="294">0.707106 0 0.707107 0.707106 0 0.707107 0.707106 0 0.707107 0.707106 0 0.707107 0.707106 0 0.707107 0.707106 0 0.707107 0.258819 0 0.965926 0.258819 0 0.965926 0.258819 0 0.965926 0.258819 0 0.965926 0.258819 0 0.965926 0.258819 0 0.965926 -0.258819 0 0.965926 -0.258819 0 0.965926 -0.258819 0 0.965926 -0.258819 0 0.965926 -0.258819 0 0.965926 -0.258819 0 0.965926 -0.707107 0 0.707106 -0.707107 0 0.707107 -0.707107 0 0.707107 -0.707107 0 0.707107 -0.707107 0 0.707106 -0.707107 0 0.707107 -0.965926 0 0.25882 -0.965926 0 0.25882 -0.965926 0 0.25882 -0.965926 0 0.25882 -0.965926 0 0.25882 -0.965926 0 0.25882 -0.965926 0 -0.25882 -0.965926 0 -0.25882 -0.965926 0 -0.25882 -0.965926 0 -0.25882 -0.965926 0 -0.25882 -0.965926 0 -0.25882 -0.707107 0 -0.707106 -0.707107 0 -0.707106 -0.707107 0 -0.707106 -0.707107 0 -0.707106 -0.707107 0 -0.707106 -0.707107 0 -0.707106 -0.258819 0 -0.965926 -0.258819 0 -0.965926 -0.258819 0 -0.965926 -0.258819 0 -0.965926 -0.258819 0 -0.965926 -0.258819 0 -0.965926 0.258819 0 -0.965926 0.258819 0 -0.965926 0.258819 0 -0.965926 0.258819 0 -0.965926 0.258819 0 -0.965926 0.258819 0 -0.965926 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.707107 0 -0.707107 0.965926 0 -0.258819 0.965926 0 -0.258819 0.965926 0 -0.258819 0.965926 0 -0.258819 0.965926 0 -0.258819 0.965926 0 -0.258819 0.965926 0 0.258819 0.965926 0 0.258819 0.965926 0 0.258819 0.965926 0 0.258819 0.965926 0 0.258819 0.965926 0 0.258819 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#objpCylinder5-mesh-normals-array" count="98" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="objpCylinder5-mesh-map-channel1">
+          <float_array id="objpCylinder5-mesh-map-channel1-array" count="156">0.385842 0.563041 0 0.385839 0.589701 0 0.318286 0.589698 0 0.318289 0.563039 0 0.385835 0.616361 0 0.318282 0.616357 0 0.385831 0.64302 0 0.318278 0.643016 0 0.385831 0.323108 0 0.385828 0.349766 0 0.318276 0.349765 0 0.318279 0.323104 0 0.385827 0.376425 0 0.318274 0.376425 0 0.385828 0.403083 0 0.318276 0.403085 0 0.385831 0.429742 0 0.318279 0.429746 0 0.385835 0.456401 0 0.318282 0.456405 0 0.385839 0.48306 0 0.318287 0.483064 0 0.385842 0.509721 0 0.318289 0.509723 0 0.385843 0.536381 0 0.31829 0.536381 0 0.436541 0.064469 0 0.466273 0.0942 0 0.395927 0.134814 0 0.395927 0.053586 0 0.355314 0.064469 0 0.325582 0.0942 0 0.3147 0.134814 0 0.325582 0.175428 0 0.355314 0.205159 0 0.395927 0.216042 0 0.436541 0.205159 0 0.466273 0.175428 0 0.477155 0.134814 0 0.466272 0.175428 0 0.436541 0.205159 0 0.395927 0.134814 0 0.395927 0.216041 0 0.355314 0.205159 0 0.325582 0.175428 0 0.3147 0.134814 0 0.325582 0.0942 0 0.355314 0.064469 0 0.395927 0.053586 0 0.436541 0.064469 0 0.466272 0.0942 0 0.477155 0.134814 0</float_array>
+          <technique_common>
+            <accessor source="#objpCylinder5-mesh-map-channel1-array" count="52" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="objpCylinder5-mesh-vertices">
+          <input semantic="POSITION" source="#objpCylinder5-mesh-positions"/>
+        </vertices>
+        <triangles material="lambert3SG" count="48">
+          <input semantic="VERTEX" source="#objpCylinder5-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#objpCylinder5-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#objpCylinder5-mesh-map-channel1" offset="2" set="1"/>
+          <p>0 0 0 1 1 1 13 2 2 0 3 0 13 4 2 12 5 3 1 6 1 2 7 4 14 8 5 1 9 1 14 10 5 13 11 2 2 12 4 3 13 6 15 14 7 2 15 4 15 16 7 14 17 5 3 18 8 4 19 9 16 20 10 3 21 8 16 22 10 15 23 11 4 24 9 5 25 12 17 26 13 4 27 9 17 28 13 16 29 10 5 30 12 6 31 14 18 32 15 5 33 12 18 34 15 17 35 13 6 36 14 7 37 16 19 38 17 6 39 14 19 40 17 18 41 15 7 42 16 8 43 18 20 44 19 7 45 16 20 46 19 19 47 17 8 48 18 9 49 20 21 50 21 8 51 18 21 52 21 20 53 19 9 54 20 10 55 22 22 56 23 9 57 20 22 58 23 21 59 21 10 60 22 11 61 24 23 62 25 10 63 22 23 64 25 22 65 23 11 66 24 0 67 0 12 68 3 11 69 24 12 70 3 23 71 25 1 72 26 0 73 27 24 74 28 2 75 29 1 72 26 24 74 28 3 76 30 2 75 29 24 74 28 4 77 31 3 76 30 24 74 28 5 78 32 4 77 31 24 74 28 6 79 33 5 78 32 24 74 28 7 80 34 6 79 33 24 74 28 8 81 35 7 80 34 24 74 28 9 82 36 8 81 35 24 74 28 10 83 37 9 82 36 24 74 28 11 84 38 10 83 37 24 74 28 0 73 27 11 84 38 24 74 28 12 85 39 13 86 40 25 87 41 13 86 40 14 88 42 25 87 41 14 88 42 15 89 43 25 87 41 15 89 43 16 90 44 25 87 41 16 90 44 17 91 45 25 87 41 17 91 45 18 92 46 25 87 41 18 92 46 19 93 47 25 87 41 19 93 47 20 94 48 25 87 41 20 94 48 21 95 49 25 87 41 21 95 49 22 96 50 25 87 41 22 96 50 23 97 51 25 87 41 23 97 51 12 85 39 25 87 41</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="unnamed_scene" name="unnamed_scene">
+      <node id="objpCylinder5-node" name="objpCylinder5" type="NODE">
+        <translate>9.7341 4.84396 4.07013</translate>
+        <instance_geometry url="#objpCylinder5-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert3SG" target="#lambert3SG">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#unnamed_scene"/>
+  </scene>
+</COLLADA>
