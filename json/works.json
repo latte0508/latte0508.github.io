@@ -319,6 +319,21 @@
                     "mobile_game",
                     "unity"
                 ]
+            },
+            {
+                "workname" : "SHOAIT",
+                "workbanner" : "images/banner/shoait_banner.png",
+                "time" : "2016",
+                "description" : "",
+                "launch" : "",
+                "folder" : "shoait",
+                "imagenumbers" : "7",
+                "keywords" : [
+                    "game",
+                    "vr_game",
+                    "unity",
+                    "3d"
+                ]
             }
         ]
     }
