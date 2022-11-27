@@ -263,6 +263,62 @@
                     "official_site",
                     "flash"
                 ]
+            },
+            {
+                "workname" : "桂格 - 天地合補",
+                "workbanner" : "images/banner/tdhb_banner.png",
+                "time" : "2011",
+                "description" : "",
+                "launch" : "",
+                "folder" : "tdhb",
+                "imagenumbers" : "8",
+                "keywords" : [
+                    "ferris_wheel",
+                    "official_site",
+                    "flash"
+                ]
+            },
+            {
+                "workname" : "SUMMONSTER",
+                "workbanner" : "images/banner/summonster_banner.png",
+                "time" : "2013",
+                "description" : "",
+                "launch" : "",
+                "folder" : "summonster",
+                "imagenumbers" : "3",
+                "keywords" : [
+                    "game",
+                    "mobile_game",
+                    "unity"
+                ]
+            },
+            {
+                "workname" : "Gospel of Satan",
+                "workbanner" : "images/banner/gos_banner.png",
+                "time" : "2021",
+                "description" : "",
+                "launch" : "",
+                "folder" : "gos",
+                "imagenumbers" : "10",
+                "keywords" : [
+                    "game",
+                    "mobile_game",
+                    "unity"
+                ]
+            },
+            {
+                "workname" : "CHOBE TOWN",
+                "workbanner" : "images/banner/chobe_town_banner.png",
+                "time" : "2013",
+                "description" : "",
+                "launch" : "",
+                "folder" : "chobe_town",
+                "imagenumbers" : "7",
+                "keywords" : [
+                    "game",
+                    "mobile_game",
+                    "unity"
+                ]
             }
         ]
     }
