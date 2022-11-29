@@ -55,6 +55,7 @@ div#canvasbox {
   left: 0; }
 
 div.message {
+  display: none;
   position: absolute;
   vertical-align: middle;
   background-color: #ffffff; }
@@ -117,6 +118,65 @@ img.outlink {
       top: 0;
       bottom: 0;
       margin: auto; } }
+
+div.carbtn {
+  position: fixed;
+  display: none;
+  cursor: pointer;
+  background-color: #ffffff; }
+  @media only screen and (orientation: landscape) {
+    div.carbtn {
+      bottom: 4.8vw;
+      right: 2.5vw;
+      width: 6vw;
+      height: 3.6vw;
+      border-radius: 0.8vw; } }
+  @media only screen and (orientation: portrait) {
+    div.carbtn {
+      bottom: 8vw;
+      right: 8vw;
+      width: 20vw;
+      height: 12vw;
+      border-radius: 2.4vw; } }
+
+img.incar {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    img.incar {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 4vw; } }
+  @media only screen and (orientation: portrait) {
+    img.incar {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 13vw; } }
+
+img.outcar {
+  position: absolute;
+  display: none; }
+  @media only screen and (orientation: landscape) {
+    img.outcar {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 4vw; } }
+  @media only screen and (orientation: portrait) {
+    img.outcar {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 13vw; } }
 
 div.loading {
   background-color: #ffffff;
@@ -260,7 +320,7 @@ img.layout_mobile {
   opacity: 0.3;
   position: absolute;
   width: 100%;
-  top: 0;
+  bottom: 0;
   left: 0; }
   @media only screen and (orientation: landscape) {
     img.layout_mobile {
