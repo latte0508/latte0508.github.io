@@ -334,6 +334,36 @@
                     "unity",
                     "3d"
                 ]
+            },
+            {
+                "workname" : "SUPER BRAND DAY 2022",
+                "workbanner" : "images/banner/sbd2022_banner.png",
+                "time" : "2022",
+                "description" : "",
+                "launch" : "",
+                "folder" : "sbd2022",
+                "imagenumbers" : "5",
+                "keywords" : [
+                    "space_shuttle",
+                    "event_site",
+                    "html5",
+                    "3d"
+                ]
+            },
+            {
+                "workname" : "SUPER BRAND DAY 2021",
+                "workbanner" : "images/banner/sbd2021_banner.png",
+                "time" : "2021",
+                "description" : "",
+                "launch" : "",
+                "folder" : "sbd2021",
+                "imagenumbers" : "4",
+                "keywords" : [
+                    "space_shuttle",
+                    "event_site",
+                    "html5",
+                    "3d"
+                ]
             }
         ]
     }
