@@ -47,7 +47,7 @@
                 ]
             },
             {
-                "workname" : "UNIQUBE",
+                "workname" : "UNIQUBE HUNTING",
                 "workbanner" : "images/banner/uniqube_banner.png",
                 "time" : "2012",
                 "description" : "",
@@ -62,7 +62,7 @@
                 ]
             },
             {
-                "workname" : "台新銀行幸福星願望",
+                "workname" : "台新銀行 - 幸福星願望",
                 "workbanner" : "images/banner/taishinbank_banner.png",
                 "time" : "2010",
                 "description" : "",
@@ -260,6 +260,7 @@
                 "imagenumbers" : "4",
                 "keywords" : [
                     "ferris_wheel",
+                    "music",
                     "official_site",
                     "flash"
                 ]
@@ -362,6 +363,20 @@
                     "space_shuttle",
                     "event_site",
                     "html5",
+                    "3d"
+                ]
+            },
+            {
+                "workname" : "LEGOWORK",
+                "workbanner" : "images/banner/legowork_banner.png",
+                "time" : "2007",
+                "description" : "",
+                "launch" : "",
+                "folder" : "legowork",
+                "imagenumbers" : "4",
+                "keywords" : [
+                    "official_site",
+                    "flash",
                     "3d"
                 ]
             }
