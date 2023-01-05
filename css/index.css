@@ -126,15 +126,19 @@ div.carbtn {
   background-color: #ffffff; }
   @media only screen and (orientation: landscape) {
     div.carbtn {
+      left: 0;
+      right: 0;
       bottom: 4.8vw;
-      right: 2.5vw;
+      margin: auto;
       width: 6vw;
       height: 3.6vw;
       border-radius: 0.8vw; } }
   @media only screen and (orientation: portrait) {
     div.carbtn {
-      bottom: 8vw;
-      right: 8vw;
+      left: 0;
+      right: 0;
+      bottom: 14vw;
+      margin: auto;
       width: 20vw;
       height: 12vw;
       border-radius: 2.4vw; } }
@@ -285,7 +289,7 @@ img.menu {
   div.copyright {
     position: fixed;
     font-family: BebasRegular;
-    text-align: right;
+    text-align: center;
     bottom: 2.3vw;
     right: 2.3vw;
     font-size: 0.8vw;
@@ -296,18 +300,16 @@ img.menu {
     position: fixed;
     font-family: BebasRegular;
     text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 7.7vw;
-    margin: auto;
+    bottom: 7.5vw;
+    right: 7.5vw;
     font-size: 2.8vw;
     letter-spacing: 0.2vw; } }
 
 img.layout {
   opacity: 0.3;
-  position: absolute;
-  width: 100%;
-  top: 0;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
   left: 0; }
   @media only screen and (orientation: landscape) {
     img.layout {
@@ -318,8 +320,8 @@ img.layout {
 
 img.layout_mobile {
   opacity: 0.3;
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   bottom: 0;
   left: 0; }
   @media only screen and (orientation: landscape) {
@@ -806,6 +808,438 @@ div.gbtn {
 @media only screen and (orientation: portrait) {
   div.on {
     border: solid 1vw #f5b331; } }
+
+div.car_control {
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100svw;
+  height: 100svh; }
+
+div.car_control_left {
+  position: absolute;
+  pointer-events: auto; }
+  @media only screen and (orientation: landscape) {
+    div.car_control_left {
+      bottom: 4.8vw;
+      left: 2.3vw;
+      width: 8.4vw;
+      height: 8.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.car_control_left {
+      bottom: 14vw;
+      left: 7.5vw;
+      width: 27vw;
+      height: 27vw; } }
+
+div.steering_wheel {
+  position: absolute;
+  width: 0;
+  height: 0; }
+  @media only screen and (orientation: landscape) {
+    div.steering_wheel {
+      top: 0vw;
+      left: 4.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.steering_wheel {
+      top: 0vw;
+      left: 13.5vw; } }
+
+div.steering_wheel img {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.steering_wheel img {
+      width: 6vw;
+      top: 0vw;
+      left: -3vw; } }
+  @media only screen and (orientation: portrait) {
+    div.steering_wheel img {
+      width: 20vw;
+      top: 0vw;
+      left: -10vw; } }
+
+div.left_btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff; }
+  @media only screen and (orientation: landscape) {
+    div.left_btn {
+      width: 3.6vw;
+      height: 3.2vw;
+      bottom: 0vw;
+      left: 0vw;
+      font-size: 1.2vw;
+      border-radius: 0.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.left_btn {
+      width: 12vw;
+      height: 10vw;
+      bottom: 0vw;
+      left: 0vw;
+      font-size: 3.6vw;
+      border-radius: 2vw; } }
+
+div.right_btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff; }
+  @media only screen and (orientation: landscape) {
+    div.right_btn {
+      width: 3.6vw;
+      height: 3.2vw;
+      bottom: 0vw;
+      right: 0vw;
+      font-size: 1.2vw;
+      border-radius: 0.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.right_btn {
+      width: 12vw;
+      height: 10vw;
+      bottom: 0vw;
+      right: 0vw;
+      font-size: 3.6vw;
+      border-radius: 2vw; } }
+
+div.car_consstrol_right {
+  position: absolute;
+  pointer-events: auto; }
+  @media only screen and (orientation: landscape) {
+    div.car_consstrol_right {
+      bottom: 4.8vw;
+      right: 2.3vw;
+      width: 8.4vw;
+      height: 8.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.car_consstrol_right {
+      bottom: 14vw;
+      right: 7.5vw;
+      width: 27vw;
+      height: 27vw; } }
+
+div.front_back_btns {
+  position: absolute;
+  bottom: 0vw;
+  right: 0vw; }
+  @media only screen and (orientation: landscape) {
+    div.front_back_btns {
+      width: 2.4vw;
+      height: 6.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.front_back_btns {
+      width: 7.2vw;
+      height: 20vw; } }
+
+div.front_btn {
+  position: relative;
+  bottom: 0vw;
+  right: 0vw; }
+  @media only screen and (orientation: landscape) {
+    div.front_btn {
+      width: 2.4vw;
+      height: 3.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.front_btn {
+      width: 7.2vw;
+      height: 10vw; } }
+
+div.front_btn img {
+  position: fixed; }
+  @media only screen and (orientation: landscape) {
+    div.front_btn img {
+      width: 2.4vw;
+      height: 3.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.front_btn img {
+      width: 7.2vw;
+      height: 10vw; } }
+
+div.front_btn p {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (orientation: landscape) {
+    div.front_btn p {
+      width: 2.4vw;
+      height: 2.4vw;
+      font-size: 1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.front_btn p {
+      width: 7.2vw;
+      height: 9vw;
+      font-size: 3.6vw; } }
+
+div.back_btn {
+  position: relative;
+  bottom: 0vw;
+  right: 0vw; }
+  @media only screen and (orientation: landscape) {
+    div.back_btn {
+      width: 2.4vw;
+      height: 3.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.back_btn {
+      width: 7.2vw;
+      height: 10vw; } }
+
+div.back_btn img {
+  position: fixed; }
+  @media only screen and (orientation: landscape) {
+    div.back_btn img {
+      width: 2.4vw;
+      height: 3.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.back_btn img {
+      width: 7.2vw;
+      height: 10vw; } }
+
+div.back_btn p {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (orientation: landscape) {
+    div.back_btn p {
+      top: 0.8vw;
+      font-size: 1vw;
+      width: 2.4vw;
+      height: 2.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.back_btn p {
+      top: 0.8vw;
+      font-size: 3.6vw;
+      width: 7.2vw;
+      height: 10vw; } }
+
+div.stop_btn {
+  position: absolute;
+  bottom: 0vw;
+  left: 0vw; }
+  @media only screen and (orientation: landscape) {
+    div.stop_btn {
+      width: 5.1vw;
+      height: 3.6vw; } }
+  @media only screen and (orientation: portrait) {
+    div.stop_btn {
+      width: 16.5vw;
+      height: 11.5vw; } }
+
+div.stop_btn img {
+  position: fixed; }
+  @media only screen and (orientation: landscape) {
+    div.stop_btn img {
+      width: 5.1vw;
+      height: 3.6vw; } }
+  @media only screen and (orientation: portrait) {
+    div.stop_btn img {
+      width: 16.5vw;
+      height: 11.5vw; } }
+
+div.stop_btn p {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (orientation: landscape) {
+    div.stop_btn p {
+      width: 5.1vw;
+      height: 3.6vw;
+      font-size: 0.9vw;
+      letter-spacing: 0.18vw; } }
+  @media only screen and (orientation: portrait) {
+    div.stop_btn p {
+      width: 16.5vw;
+      height: 11.5vw;
+      font-size: 3vw;
+      letter-spacing: 0.5vw; } }
+
+div.qmimi_control {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  width: 100svw;
+  height: 100svh; }
+
+div.qmimi_control_left {
+  position: absolute;
+  pointer-events: auto; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_control_left {
+      bottom: 2.3vw;
+      left: 2.3vw;
+      width: 8.4vw;
+      height: 8.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_control_left {
+      bottom: 7.5vw;
+      left: 7.5vw;
+      width: 27vw;
+      height: 27vw; } }
+
+div.qmimi_move {
+  position: absolute; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_move {
+      width: 8.4vw;
+      height: 8.4vw;
+      bottom: 0vw;
+      left: 0vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_move {
+      width: 27vw;
+      height: 27vw;
+      bottom: 0vw;
+      left: 0vw; } }
+
+div.qmimi_move img {
+  position: fixed; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_move img {
+      width: 8.4vw;
+      height: 8.4vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_move img {
+      width: 27vw;
+      height: 27vw; } }
+
+div.qmimi_move p {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_move p {
+      width: 2vw;
+      height: 2vw;
+      font-size: 1.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_move p {
+      width: 7vw;
+      height: 7vw;
+      font-size: 3.6vw; } }
+
+p.front_word {
+  left: 0;
+  right: 0;
+  top: 0vw;
+  margin: auto; }
+
+p.left_word {
+  left: 0vw;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+p.back_word {
+  left: 0;
+  right: 0;
+  bottom: 0vw;
+  margin: auto; }
+
+p.right_word {
+  right: 0vw;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+div.qmimi_consstrol_right {
+  position: absolute;
+  pointer-events: auto; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_consstrol_right {
+      bottom: 4.8vw;
+      right: 2.3vw;
+      width: 8.4vw;
+      height: 3.6vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_consstrol_right {
+      bottom: 14vw;
+      right: 7.5vw;
+      width: 27vw;
+      height: 12vw; } }
+
+div.jump_btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff; }
+  @media only screen and (orientation: landscape) {
+    div.jump_btn {
+      width: 8.4vw;
+      height: 3.6vw;
+      border-radius: 0.8vw;
+      font-size: 1.2vw;
+      letter-spacing: 0.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.jump_btn {
+      width: 27vw;
+      height: 12vw;
+      border-radius: 2.4vw;
+      font-size: 3.6vw;
+      letter-spacing: 0.6vw; } }
+
+.svgon {
+  fill: #fff; }
+
+.svgoff {
+  fill: #999; }
+
+.bgon {
+  background-color: #fff; }
+
+.bgoff {
+  background-color: #999; }
 
 @font-face {
   font-family: 'BebasRegular';
