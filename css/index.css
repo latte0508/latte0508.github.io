@@ -1099,19 +1099,20 @@ div.qmimi_control {
 
 div.qmimi_control_left {
   position: absolute;
+  background-color: #0f0;
   pointer-events: auto; }
   @media only screen and (orientation: landscape) {
     div.qmimi_control_left {
       bottom: 2.3vw;
       left: 2.3vw;
-      width: 8.4vw;
-      height: 8.4vw; } }
+      width: 16vw;
+      height: 16vw; } }
   @media only screen and (orientation: portrait) {
     div.qmimi_control_left {
       bottom: 7.5vw;
       left: 7.5vw;
-      width: 27vw;
-      height: 27vw; } }
+      width: 42vw;
+      height: 42vw; } }
 
 div.qmimi_move {
   position: absolute; }
