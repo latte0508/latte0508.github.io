@@ -40,6 +40,7 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   -webkit-text-size-adjust: 100%; }
 
 canvas {
@@ -810,7 +811,6 @@ div.gbtn {
     border: solid 1vw #f5b331; } }
 
 div.car_control {
-  overflow: hidden;
   display: none;
   pointer-events: none;
   position: fixed;
@@ -1091,7 +1091,6 @@ div.stop_btn p {
       letter-spacing: 0.5vw; } }
 
 div.qmimi_control {
-  overflow: hidden;
   position: fixed;
   pointer-events: none;
   top: 0;
