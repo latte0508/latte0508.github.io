@@ -1099,20 +1099,46 @@ div.qmimi_control {
 
 div.qmimi_control_left {
   position: absolute;
-  background-color: #0f0;
   pointer-events: auto; }
   @media only screen and (orientation: landscape) {
     div.qmimi_control_left {
-      bottom: 2.3vw;
-      left: 2.3vw;
+      bottom: 0vw;
+      left: 0vw;
       width: 16vw;
       height: 16vw; } }
   @media only screen and (orientation: portrait) {
     div.qmimi_control_left {
-      bottom: 7.5vw;
-      left: 7.5vw;
+      bottom: 0vw;
+      left: 0vw;
       width: 42vw;
       height: 42vw; } }
+
+div.qmimi_move_background {
+  position: fixed;
+  display: none;
+  background-color: #fff;
+  opacity: 0.3; }
+  @media only screen and (orientation: landscape) {
+    div.qmimi_move_background {
+      bottom: 0vw;
+      left: 0vw;
+      width: 16vw;
+      height: 16vw;
+      border-radius: 4.2vw; } }
+  @media only screen and (orientation: portrait) {
+    div.qmimi_move_background {
+      bottom: 0vw;
+      left: 0vw;
+      width: 42vw;
+      height: 42vw;
+      border-radius: 13.5vw; } }
+
+div#draggable {
+  cursor: move;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 div.qmimi_move {
   position: absolute; }
@@ -1130,7 +1156,11 @@ div.qmimi_move {
       left: 0vw; } }
 
 div.qmimi_move img {
-  position: fixed; }
+  position: fixed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media only screen and (orientation: landscape) {
     div.qmimi_move img {
       width: 8.4vw;
