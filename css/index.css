@@ -43,7 +43,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 canvas {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -56,7 +56,7 @@ div#canvasbox {
 
 div.message {
   display: none;
-  position: absolute;
+  position: fixed;
   vertical-align: middle;
   background-color: #ffffff; }
   @media only screen and (orientation: landscape) {
@@ -184,7 +184,7 @@ img.outcar {
 
 div.loading {
   background-color: #ffffff;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -218,7 +218,7 @@ a.logo img {
 
 div.nav {
   display: none;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100svh;
   background-color: #ffffff;
@@ -285,25 +285,22 @@ img.back {
 img.menu {
   display: block; }
 
-@media only screen and (orientation: landscape) {
-  div.copyright {
-    position: fixed;
-    font-family: BebasRegular;
-    text-align: center;
-    bottom: 2.3vw;
-    right: 2.3vw;
-    font-size: 0.8vw;
-    letter-spacing: 0.1vw; } }
-
-@media only screen and (orientation: portrait) {
-  div.copyright {
-    position: fixed;
-    font-family: BebasRegular;
-    text-align: center;
-    bottom: 7.5vw;
-    right: 7.5vw;
-    font-size: 2.8vw;
-    letter-spacing: 0.2vw; } }
+div.copyright {
+  position: fixed;
+  font-family: BebasRegular;
+  text-align: center; }
+  @media only screen and (orientation: landscape) {
+    div.copyright {
+      bottom: 2.3vw;
+      right: 2.3vw;
+      font-size: 0.8vw;
+      letter-spacing: 0.1vw; } }
+  @media only screen and (orientation: portrait) {
+    div.copyright {
+      bottom: 7.5vw;
+      right: 7.5vw;
+      font-size: 2.8vw;
+      letter-spacing: 0.2vw; } }
 
 img.layout {
   opacity: 0.3;
@@ -333,7 +330,7 @@ img.layout_mobile {
 
 div.filter {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   width: 100vw;
   height: 100svh; }
