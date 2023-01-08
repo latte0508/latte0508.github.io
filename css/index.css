@@ -50,7 +50,7 @@ canvas {
   left: 0; }
 
 div#canvasbox {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0; }
 
