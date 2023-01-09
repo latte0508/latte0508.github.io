@@ -124,6 +124,10 @@ div.carbtn {
   position: fixed;
   display: none;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-color: #ffffff; }
   @media only screen and (orientation: landscape) {
     div.carbtn {
