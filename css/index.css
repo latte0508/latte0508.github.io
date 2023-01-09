@@ -810,6 +810,10 @@ div.gbtn {
 div.car_control {
   display: none;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1064,6 +1068,10 @@ div.stop_btn p {
 div.qmimi_control {
   position: fixed;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   top: 0;
   right: 0;
   width: 100svw;
