@@ -163,7 +163,11 @@ div.carbtn {
       border-radius: 2.4vw; } }
 
 img.incar {
-  position: absolute; }
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media only screen and (orientation: landscape) {
     img.incar {
       left: 0;
@@ -188,7 +192,11 @@ img.incar {
 
 img.outcar {
   position: absolute;
-  display: none; }
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   @media only screen and (orientation: landscape) {
     img.outcar {
       left: 0;
@@ -1048,9 +1056,9 @@ div.front_btn {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.front_btn {
-    width: 4.8vw;
-    height: 6.4vw;
-    bottom: 11.3vw;
+    width: 6.24vw;
+    height: 8.32vw;
+    bottom: 13vw;
     right: 2.3vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
@@ -1071,8 +1079,8 @@ div.front_btn img {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.front_btn img {
-    width: 4.8vw;
-    height: 6.4vw; } }
+    width: 6.24vw;
+    height: 8.32vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.front_btn img {
@@ -1097,9 +1105,9 @@ div.front_btn p {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.front_btn p {
-    width: 4.8vw;
-    height: 4.8vw;
-    font-size: 2vw; } }
+    width: 6.24vw;
+    height: 6.24vw;
+    font-size: 2.6vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.front_btn p {
@@ -1117,8 +1125,8 @@ div.back_btn {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.back_btn {
-    width: 4.8vw;
-    height: 6.4vw;
+    width: 6.24vw;
+    height: 8.32vw;
     bottom: 5vw;
     right: 2.3vw; } }
 
@@ -1140,8 +1148,8 @@ div.back_btn img {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.back_btn img {
-    width: 4.8vw;
-    height: 6.4vw; } }
+    width: 6.24vw;
+    height: 8.32vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.back_btn img {
@@ -1166,10 +1174,10 @@ div.back_btn p {
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.back_btn p {
-    top: 1.6vw;
-    font-size: 2vw;
-    width: 4.8vw;
-    height: 4.8vw; } }
+    top: 2.08vw;
+    font-size: 2.6vw;
+    width: 6.24vw;
+    height: 6.24vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.back_btn p {
@@ -1192,7 +1200,7 @@ div.stop_btn {
     width: 10.2vw;
     height: 7.2vw;
     bottom: 5vw;
-    right: 9vw; } }
+    right: 10vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.stop_btn {
@@ -1376,7 +1384,7 @@ div.qmimi_move p {
   div.qmimi_move p {
     width: 4vw;
     height: 4vw;
-    font-size: 1.2vw; } }
+    font-size: 2.4vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.qmimi_move p {
