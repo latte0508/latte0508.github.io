@@ -1568,6 +1568,14 @@ div.jump_btn {
       font-size: 3.6vw;
       letter-spacing: 0.6vw; } }
 
+div.alertData {
+  position: absolute;
+  background-color: #fff;
+  width: 30vw;
+  height: 10vw;
+  top: 0vw;
+  left: 0vw; }
+
 .svgon {
   fill: #fff; }
 
