@@ -10,16 +10,18 @@
     <div class="message"><p class="message">View 3C product works</p><img class="outlink" src="images/outlink.svg" /></div>
     <div class="carbtn"><img class="incar" src="images/incar.svg" /><img class="outcar" src="images/outcar.svg" /></div>
     <!-- car_control -->
-    <div class="car_control">
+    <div class="car_control" id="car_control">
         <div class="steering_wheel"><img src="images/steering_wheel.svg" /></div>
-        <div class="left_btn" id="carLeftBtn">A</div>
-        <div class="right_btn" id="carRightBtn">D</div>
-        <div class="front_btn" id="carForwardBtn"><img src="images/front_btn.svg" /><p>W</p></div>
-        <div class="back_btn" id="carBackwardBtn"><img src="images/back_btn.svg" /><p>S</p></div>
+        <div class="left_right_controller">
+            <div class="left_right_bg"></div><div class="left_right_btn" id="draggable2"><p class="left">A</p><p class="right">D</p></div>
+        </div>
+        <div class="front_back_controller">
+            <div class="front_back_bg"></div><div class="front_back_btn" id="draggable3"><p class="front">W</p><p class="back">S</p></div>
+        </div>
         <div class="stop_btn" id="carStopBtn"><img src="images/stop.svg" /><p>SPACE</p></div>
     </div>
     <!-- qmimi_control -->
-    <div class="qmimi_control">
+    <div class="qmimi_control" id="qmimiControlBar">
         <div class="qmimi_control_left">
             <div class="qmimi_move_background"></div>
             <div class="qmimi_move" id="draggable"><img src="images/move.svg" /><p class="front_word">W</p><p class="left_word">A</p><p class="back_word">S</p><p class="right_word">D</p></div>
@@ -28,7 +30,6 @@
             <div class="jump_btn">SPACE</div>
         </div>
     </div>
-
     <!-- 工作列表 -->
     <div class="works">
         <div class="scroll">S<br>C<br>R<br>O<br>L<br>L<br><br><img src="images/arrow-down.svg" /></div>
@@ -83,14 +84,13 @@
     </div>
     <!-- 右上按鈕 -->
     <div class="navbtn">
-        <!-- <a href="#works"><img class="close" src="images/close.svg" /></a> -->
         <img class="back" src="images/close.svg" />
         <a href="#menu"><img class="menu" src="images/menu.svg" /></a>
     </div>
     <div class="loading"><img src="images/loading.svg" /></div>
     <a class="logo" href="#"><img class="logo" src="images/logo.svg" /></a>
     <div class="copyright">© 2023 BIG_STUDIO</div>
-    
+    <!-- layout -->
     <!-- <img class="layout" src="images/index.png" />  -->
     <!-- <img class="layout_mobile" src="images/index_mobile.png" /> -->
 </body>
