@@ -1126,7 +1126,8 @@ p.right {
       font-size: 3.6vw; } }
 
 div.front_back_controller {
-  position: absolute; }
+  position: absolute;
+  pointer-events: auto; }
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.front_back_controller {
@@ -1181,7 +1182,6 @@ div.front_back_bg {
 
 div.front_back_btn {
   position: absolute;
-  pointer-events: auto;
   background-color: #fff; }
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
@@ -1278,7 +1278,8 @@ p.back {
       font-size: 3.6vw; } }
 
 div.stop_btn {
-  position: absolute; }
+  position: absolute;
+  pointer-events: auto; }
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.stop_btn {
