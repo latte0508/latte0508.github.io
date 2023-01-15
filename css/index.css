@@ -668,30 +668,33 @@ img.workbanner {
 p.workname {
   float: left;
   font-family: BebasRegular; }
-  @media only screen and (orientation: landscape) {
-    p.workname {
-      margin-top: 0.4vw;
-      font-size: 1.1vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  p.workname {
+    margin-top: 0.8vw;
+    font-size: 2.2vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  p.workname {
+    margin-top: 0.4vw;
+    font-size: 1.1vw; } }
   @media only screen and (orientation: portrait) {
     p.workname {
       margin-top: 1.2vw;
       font-size: 3vw; } }
 
-p.workname sub {
-  font-family: BebasRegular; }
-  @media only screen and (orientation: landscape) {
-    p.workname sub {
-      font-size: 1.3vw; } }
-  @media only screen and (orientation: portrait) {
-    p.workname sub {
-      font-size: 3.6vw; } }
-
 img.arrow_right {
   float: right; }
-  @media only screen and (orientation: landscape) {
-    img.arrow_right {
-      margin-top: 0.5vw;
-      width: 1.2vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  img.arrow_right {
+    margin-top: 1vw;
+    width: 2.4vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  img.arrow_right {
+    margin-top: 0.5vw;
+    width: 1.2vw; } }
   @media only screen and (orientation: portrait) {
     img.arrow_right {
       margin-top: 1.3vw;
