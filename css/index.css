@@ -689,7 +689,7 @@ img.arrow_right {
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   img.arrow_right {
     margin-top: 0.8vw;
-    width: 2.4vw; } }
+    width: 1.8vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   img.arrow_right {
