@@ -402,12 +402,20 @@ div.copyright {
   position: fixed;
   font-family: BebasRegular;
   text-align: center; }
-  @media only screen and (orientation: landscape) {
-    div.copyright {
-      bottom: 2.3vw;
-      right: 2.3vw;
-      font-size: 0.8vw;
-      letter-spacing: 0.1vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  div.copyright {
+    bottom: 2.3vw;
+    right: 2.3vw;
+    font-size: 1.6vw;
+    letter-spacing: 0.2vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  div.copyright {
+    bottom: 2.3vw;
+    right: 2.3vw;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw; } }
   @media only screen and (orientation: portrait) {
     div.copyright {
       bottom: 7.5vw;
@@ -520,9 +528,14 @@ div.works {
   width: 100vw;
   height: auto;
   min-height: 100svh; }
-  @media only screen and (orientation: landscape) {
-    div.works {
-      padding-bottom: 15vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  div.works {
+    padding-bottom: 25vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  div.works {
+    padding-bottom: 15vw; } }
   @media only screen and (orientation: portrait) {
     div.works {
       padding-bottom: 50vw; } }
@@ -530,11 +543,17 @@ div.works {
 div.scroll {
   position: fixed;
   font-family: BebasRegular;
-  font-size: 1vw;
-  line-height: 1.5vw;
   text-align: center;
   bottom: 2.3vw;
   left: 2.3vw; }
+  @media (max-width: 1000px) {
+    div.scroll {
+      font-size: 2vw;
+      line-height: 3vw; } }
+  @media (min-width: 1000px) {
+    div.scroll {
+      font-size: 1vw;
+      line-height: 1.5vw; } }
   @media only screen and (orientation: landscape) {
     div.scroll {
       display: block; } }
@@ -542,30 +561,44 @@ div.scroll {
     div.scroll {
       display: none; } }
 
-div.scroll img {
-  width: 2.5vw; }
+@media (max-width: 1000px) {
+  div.scroll img {
+    width: 5vw; } }
+
+@media (min-width: 1000px) {
+  div.scroll img {
+    width: 2.5vw; } }
 
 div.filterkeywords {
   position: relative;
   left: 0;
   right: 0;
   margin: auto; }
-  @media only screen and (orientation: landscape) {
-    div.filterkeywords {
-      top: 6.7vw;
-      width: 67.2vw;
-      font-size: 3.1vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  div.filterkeywords {
+    top: 12vw;
+    width: 67.2vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  div.filterkeywords {
+    top: 6.7vw;
+    width: 67.2vw; } }
   @media only screen and (orientation: portrait) {
     div.filterkeywords {
       top: 26vw;
-      width: 85vw;
-      font-size: 10vw; } }
+      width: 85vw; } }
 
 div.filterkeywords p {
   font-family: BebasBold; }
-  @media only screen and (orientation: landscape) {
-    div.filterkeywords p {
-      font-size: 3.1vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  div.filterkeywords p {
+    font-size: 6vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  div.filterkeywords p {
+    font-size: 3.1vw; } }
   @media only screen and (orientation: portrait) {
     div.filterkeywords p {
       font-size: 10vw; } }
@@ -573,11 +606,18 @@ div.filterkeywords p {
 img.filter {
   position: absolute;
   cursor: pointer; }
-  @media only screen and (orientation: landscape) {
-    img.filter {
-      top: 0.3vw;
-      right: 1vw;
-      width: 2.7vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  img.filter {
+    top: 0.3vw;
+    right: 1vw;
+    width: 5.4vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  img.filter {
+    top: 0.3vw;
+    right: 1vw;
+    width: 2.7vw; } }
   @media only screen and (orientation: portrait) {
     img.filter {
       top: 2vw;
@@ -591,10 +631,16 @@ div.worklist {
   right: 0;
   margin: auto;
   height: auto; }
-  @media only screen and (orientation: landscape) {
-    div.worklist {
-      top: 6.7vw;
-      width: 67.2vw; } }
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  div.worklist {
+    top: 12vw;
+    width: 67.2vw; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1000px) {
+  div.worklist {
+    top: 6.7vw;
+    width: 67.2vw; } }
   @media only screen and (orientation: portrait) {
     div.worklist {
       top: 26vw;
