@@ -1024,22 +1024,40 @@ div.car_control {
 
 div.steering_wheel {
   position: absolute;
-  width: 0;
-  height: 0; }
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%; }
 
 @media only screen and (orientation: landscape) and (max-width: 1000px) {
   div.steering_wheel {
-    bottom: 21vw;
-    left: 7.8vw; } }
+    width: 12vw;
+    height: 8.4vw;
+    bottom: 13vw;
+    left: 4.8vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.steering_wheel {
-    bottom: 12.8vw;
-    left: 6.5vw; } }
+    width: 6vw;
+    height: 4.2vw;
+    bottom: 8.8vw;
+    left: 3.5vw; } }
   @media only screen and (orientation: portrait) {
     div.steering_wheel {
+      width: 20vw;
+      height: 0;
       bottom: 41.5vw;
-      left: 21vw; } }
+      left: 11vw; } }
+
+.turn_left {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg); }
+
+.turn_none {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg); }
+
+.turn_right {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg); }
 
 div.steering_wheel img {
   position: absolute; }
@@ -1048,18 +1066,18 @@ div.steering_wheel img {
   div.steering_wheel img {
     width: 12vw;
     top: 0vw;
-    left: -3vw; } }
+    left: 0vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
   div.steering_wheel img {
     width: 6vw;
     top: 0vw;
-    left: -3vw; } }
+    left: 0vw; } }
   @media only screen and (orientation: portrait) {
     div.steering_wheel img {
       width: 20vw;
       top: 0vw;
-      left: -10vw; } }
+      left: 0vw; } }
 
 div.left_right_controller {
   position: absolute; }
@@ -1125,7 +1143,7 @@ div.left_right_btn {
     width: 12vw;
     height: 6.4vw;
     top: 0vw;
-    left: 0vw;
+    left: 2.4vw;
     border-radius: 0.8vw; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1000px) {
@@ -1133,14 +1151,14 @@ div.left_right_btn {
     width: 6vw;
     height: 3.2vw;
     top: 0vw;
-    left: 0vw;
+    left: 1.2vw;
     border-radius: 0.4vw; } }
   @media only screen and (orientation: portrait) {
     div.left_right_btn {
       width: 19vw;
       height: 10vw;
       top: 0vw;
-      left: 0vw;
+      left: 3.5vw;
       border-radius: 2vw; } }
 
 p.left {
