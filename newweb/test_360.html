@@ -1,14 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Test_360</title><script src="scripts/aframe.min.js"></script><script src="scripts/aframe-extras.min.js"></script><script src="scripts/tween.umd.js"></script><script defer="defer" src="js/test_360.js"></script><link href="css/test_360.css" rel="stylesheet"></head><body><a-scene id="scene" shadow="type: pcfsoft"><a-assets><img id="sky" src="images/sky4.png"> <img id="depthmap" src="images/depthmap4.png"></a-assets><a-camera id="basic_camera" wasd-controls-enabled="false" look-controls-enabled="false" orbit-controls="target: 0 0 0; minDistance: 2; maxDistance: 12; initialPosition: 0 0 0; rotateSpeed:2; zoomSpeed:2; enablePan:false; maxPolarAngle:180"></a-camera><a-light type="ambient" color="#222222" light=""></a-light><a-entity id="basic_light" position="30 30 30" light="
-                       type:directional;
-                       target:#qmimi;
-                       color:#ff00cc;
-                       intensity:0.8;
-                       castShadow:true;
-                       shadowCameraTop:   10;
-                       shadowCameraRight: 10;
-                       shadowCameraLeft: -10"></a-entity><a-entity id="sun_light" position="-300 300 -300" light="
-                       type:directional;
-                       target:#qmimi;
-                       color:#00ffff;
-                       intensity:1;
-                       castShadow:false;"></a-entity><a-sphere id="sphere_360" src="#sky" segments-height="108" segments-width="216" radius="5" displacement-scale="2" displacement-map="#depthmap"></a-sphere><a-sky src="#sky"></a-sky></a-scene><div id="stats-container"></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Test_360</title><script src="scripts/aframe.min.js"></script><script src="scripts/aframe-extras.min.js"></script><script src="scripts/tween.umd.js"></script><script defer="defer" src="js/test_360.js"></script><link href="css/test_360.css" rel="stylesheet"></head><body><a-scene id="scene" shadow="type: pcfsoft"><a-assets><img id="sky" src="images/sky4.png"> <img id="depthmap" src="images/depthmap4.png"></a-assets><a-camera id="basic_camera" wasd-controls-enabled="true" look-controls-enabled="true"></a-camera><a-light type="ambient" color="#999999" light=""></a-light><a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"><a-entity id="basic_light" position="30 30 0" light="
+                        type:point;
+                        color:#ff00cc;
+                        intensity:0.8;
+                        castShadow:true;"></a-entity><a-entity id="sun_light" position="-30 30 -30" light="
+                        type:point;
+                        color:#00ffff;
+                        intensity:0.8;
+                        castShadow:false;"></a-entity></a-entity><a-sphere id="sphere_360" src="#sky" material="side: back" segments-height="216" segments-width="432" radius="50" displacement-scale="20" displacement-map="#depthmap"></a-sphere><a-sky src="#sky"></a-sky></a-scene><div id="stats-container"></div></body></html>
