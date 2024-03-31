@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>::: Aframe Model Viewer :::</title><script src="scripts/aframe.min.js"></script><script defer="defer" src="js/aframe_model_viewer.js"></script><link href="css/aframe_model_viewer.css" rel="stylesheet"></head><body><a-scene id="scene" renderer="colorManagement: true;" info-message="htmlSrc: #messageText" model-viewer="gltfModel: #triceratops; title: Triceratops"><a-assets><a-asset-item id="qmimi_data" src="./models/mv_test_airplane.glb"></a-asset-item><img id="sky" src="images/bigcity.jpg"></a-assets><a-camera id="basic_camera" wasd-controls-enabled="false" look-controls-enabled="false" orbit-controls="target: 0 2.4 0; minDistance: 1; maxDistance: 8; initialPosition: 0 1.6 18; rotateSpeed:2; zoomSpeed:2; enablePan:false; maxPolarAngle:180"></a-camera><a-gltf-model visible="true" id="qmimi" position="0 1 0" src="#qmimi_data" shadow="cast: true; receive: false;"></a-gltf-model><a-light type="ambient" color="#000000" light=""></a-light><a-entity id="basic_light" position="-30 30 30" light="
+                   type:directional;
+                   target:#qmimi;
+                   color:#ffb590;
+                   intensity:1;
+                   castShadow:true;
+                   shadowCameraTop:   10;
+                   shadowCameraRight: 10;
+                   shadowCameraLeft: -10"></a-entity><a-entity id="sun_light" position="300 300 300" light="
+                   type:directional;
+                   target:#qmimi;
+                   color:#66ffff;
+                   intensity:0.33;
+                   castShadow:false;
+                   shadowCameraTop:   10;
+                   shadowCameraRight: 10;
+                   shadowCameraLeft: -10"></a-entity><a-sky src="#sky" rotation="0 180 0" radius="2000" material="fog: false"></a-sky></a-scene></body></html>
