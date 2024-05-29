@@ -1,0 +1,9 @@
+<html><head><script src="scripts/aframe.min.js"></script><script src="scripts/aframe-extras.min.js"></script><script defer="defer" src="js/lbw.js"></script><link href="css/lbw.css" rel="stylesheet"></head><body><a-scene debug id="scene" shadow="type: pcfsoft; resolution: 2048" cursor="rayOrigin: mouse" render="antialias:true; alpha:true"><a-assets><a-asset-item id="lbw_model" src="./models/lbw.glb"></a-asset-item><img id="sky_day" src="images/gtfbg.png"></a-assets><a-camera camera="fov: 1" id="basic_camera" wasd-controls-enabled="false" look-controls-enabled="false" orbit-controls="target: 0 0 0; enableRotate: false;  minDistance: 240; maxDistance: 300; initialPosition: 0 0 300; rotateSpeed:2; zoomSpeed:2; enablePan:false; maxPolarAngle:90" position="0 0 0"></a-camera><a-entity id="objects" cursor-listener position="0 0 0"><a-gltf-model id="lbw" src="#lbw_model" shadow="cast: true; receive: false; type: pcf"></a-gltf-model></a-entity><a-light id="ambient_light" type="ambient" color="#ffffff" light=""></a-light><a-entity id="light_objects" rotation="0 0 0"><a-entity id="basic_light" position="0 0 10" light="
+                    type:directional;
+                    target:#gtf;
+                    color:#ffffff;
+                    intensity:0;
+                    castShadow:true;
+                    shadowCameraTop:   10;
+                    shadowCameraRight: 10;
+                    shadowCameraLeft: -10"></a-entity></a-entity><a-sky color="#FFFFFF" rotation="0 90 0"></a-sky></a-scene></body></html>
