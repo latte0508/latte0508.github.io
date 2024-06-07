@@ -1,0 +1,9 @@
+<html><head><script src="scripts/aframe.min.js"></script><script defer="defer" src="js/p228.js"></script><link href="css/p228.css" rel="stylesheet"></head><body><a-scene debug id="scene" shadow="type: pcfsoft; resolution: 2048" cursor="rayOrigin: mouse"><a-assets><a-asset-item id="gtf_model" src="./models/cube228.glb"></a-asset-item><img id="sky" src="images/gtfbg_night.png"></a-assets><a-camera id="basic_camera" wasd-controls-enabled="false" look-controls-enabled="false" orbit-controls="target: 0 0 0; minDistance: 0.8; maxDistance: 1.8; initialPosition: -1.8 1.8 1.8; rotateSpeed:2; zoomSpeed:2; enablePan:false; maxPolarAngle:180" position="0 0 0"></a-camera><a-entity cursor-listener scale="0.5 0.5 0.5" position="0 0 0" shadow="cast: true; receive: true; type: pcf"><a-gltf-model id="gtf" src="#gtf_model" shadow="cast: false; receive: false;"></a-gltf-model></a-entity><a-light type="ambient" color="#333333" light=""></a-light><a-entity rotation="0 0 0"><a-entity id="basic_light" position="10 10 10" light="
+                    type:directional;
+                    target:#gtf;
+                    color:#ffffff;
+                    intensity:0.33;
+                    castShadow:true;
+                    shadowCameraTop:   10;
+                    shadowCameraRight: 10;
+                    shadowCameraLeft: -10"></a-entity></a-entity><a-sky src="#sky" rotation="0 270 0"></a-sky></a-scene><div id="playButton">228 DEMO</div></body></html>
