@@ -1,0 +1,9 @@
+<html><head><script src="scripts/aframe.min.js"></script><script src="scripts/aframe-extras.min.js"></script><script defer="defer" src="js/aframe_model_viewer.js"></script><link href="css/aframe_model_viewer.css" rel="stylesheet"></head><body><a-scene id="scene" shadow="type: pcfsoft; resolution: 2048" cursor="rayOrigin: mouse"><a-assets><a-asset-item id="qmimi_data" src="./models/qmimi_hp.glb"></a-asset-item><img id="sky1" src="images/bg1.png"> <img id="sky2" src="images/bg2.png"> <img id="sky3" src="images/bg3.png"> <img id="sky4" src="images/bg4.png"> <img id="sky5" src="images/bg5.png"> <img id="sky6" src="images/bg6.png"> <img id="sky7" src="images/bg7.png"></a-assets><a-camera id="basic_camera" wasd-controls-enabled="false" look-controls-enabled="true"></a-camera><a-gltf-model visible="true" id="qmimi" scale="0.4 0.4 0.4" rotation="0 0 0" position="0 0 -2.5" src="#qmimi_data" animation-mixer="clip: Walk; duration: 1.5" shadow="cast: true; receive: false;"></a-gltf-model><a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" material="opacity: 1; transparent: true; blending: multiply;" shadow="cast: false; receive: true;"></a-plane><a-light type="ambient" color="#333333" light=""></a-light><a-entity id="basic_light" position="-30 30 -30" light="
+                    type:directional;
+                    target:#qmimi;
+                    color:#ffffff;
+                    intensity:1;
+                    castShadow:true;
+                    shadowCameraTop:   10;
+                    shadowCameraRight: 10;
+                    shadowCameraLeft: -10"></a-entity><a-sky src="#sky1" rotation="0 180 0" radius="2000" material="fog: false"></a-sky></a-scene><p class="titleWord">Aframe Model Viewer</p><p class="bgBtn">Change Background</p><div class="changeBgLoading"><img class="changeBgLoading" src="images/bg_loading.svg"/></div><div class="loading"><img src="images/loading.svg"/></div></body></html>
